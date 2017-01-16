@@ -1,0 +1,18 @@
+body {
+	background-image: url("assets/old_map_@2X.png");
+	font-family: 'Josefin Sans', sans-serif !important;
+
+}
+h1 {
+	font-family: 'Bungee Shade', cursive !important;
+	text-align: center;
+}
+
+
+
+.vertical-center {
+	text-align: center;
+
+	
+   background-color: rgba(249,231,192,0.1); 
+}

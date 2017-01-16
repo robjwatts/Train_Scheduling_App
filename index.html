@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Big Train a-Comin'</title>
+      <meta name="description" content="Train App">
+      <meta name="author" content="SitePoint">
+
+      <!--jquery-->
+      <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+
+  <!--bootstrap-->
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!--emoji library link -->    
+      <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+  <!--google fonts-->    
+     
+      <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Josefin+Sans" rel="stylesheet">
+
+  <!--CSS Links..-->    
+      <link rel="stylesheet" href="reset.css">
+      <link rel="stylesheet" href="style.css">
+
+<!--firebase links-->
+      <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
+   </head>
+
+   <!--momentjs link-->
+
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+
+
+   <body>
+      <div class="container-fluid">
+      <div class="jumbotron vertical-center">
+         <h1>Rail Traveler</h1>
+         <p>Rail Traveler is an app designed to help you plot out your travels, wherever they may take you. <i class="em em-bullettrain_side"></i> </p>
+      </div>
+
+
+
+<!--panel heading here -->
+     <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title"><strong>Train Schedule</strong></h3>
+            </div>
+            <div class="panel-body">
+              <table class="table table-hover" id='employee-table'>
+                <thead>
+                  <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                  </tr>
+                </thead>
+                <tbody id="display">
+                </tbody>
+              </table>
+            </div>
+            </div>
+            </div>
+
+      
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+         </div>
+      </div>
+
+
+
+
+
+      <div class="panel panel-default">
+      <div class="panel-heading"><i class="em em-train"></i> Add Train</div>
+      <div class="panel-body" id="wellSection">
+      <form>
+         <div class="form-group">
+            <label for="formGroupTrainName">Train Name</label>
+            <input type="text" class="form-control" id="formGroupTrainName" placeholder="What rail line are we taking for this adventure?">
+         </div>
+         <div class="form-group">
+            <label for="formGroupDestinationName">Destination</label>
+            <input type="text" class="form-control" id="formGroupDestinationName" placeholder="Where are we going?">
+         </div>
+         <div class="form-group">
+            <label for="formGroupTime">First Train Time (HH:MM - Military Time)</label>
+            <input type="text" class="form-control" id="formGroupTime" placeholder="What time do we aim to leave?">
+         </div>
+         <div class="form-group">
+            <label for="formGroupFrequency">Frequency</label>
+            <input type="text" class="form-control" id="formGroupFrequency" placeholder="How often are we looking for trains?">
+         </div>
+      </form>
+      <button type="button" id="searchBtn" class="btn btn-primary btn-lg">Let's Go!</button>
+      <table class="table">
+      <script src="script.js"></script>
+
+   </body>
+
+
+
+
+</html>
